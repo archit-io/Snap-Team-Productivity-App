@@ -1,0 +1,97 @@
+
+
+/* global styles */
+
+* {
+    box-sizing: border-box;
+    font-family: 'Epilogue', sans-serif;
+    background-color: hsl(0, 0%, 98%);
+    color: hsl(0, 0%, 8%);
+}
+
+/* Typography */
+
+p, span, a {
+    font-size: 18px;
+}
+
+h1 {
+    font-size: 70px;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+li:nth-child(3) > a, p {
+    color: hsl(0, 0%, 41%);
+}
+
+/* Navigation Bar */
+header, ul, main {
+    display: flex;
+}
+
+header {
+    height: 50px;
+    margin: 20px;
+    align-items: center;
+}
+
+nav {
+    flex-basis: 90%;
+}
+
+ul {
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+}
+
+.logo {
+    height: 60%;
+}
+
+.login {
+    margin-left: 40%;
+}
+
+.register , .learnMore {
+    padding: 8px 20px;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+/* Main */
+main {
+    margin: 60px 140px 140px 140px;
+    position: relative;
+}
+
+.sectionMain{
+    margin-right: 70px; 
+}
+
+main img {
+    width: 450px;
+}
+
+.learnMore {
+    display: inline-block;
+    margin-top: 50px;
+}
+
+.clientLogo {
+    position: absolute;
+    bottom: 0;
+    width: 55%;
+    margin-left: -80px;
+}
+
+.clientLogo img {
+    width: 70px;
+}
