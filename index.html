@@ -16,9 +16,28 @@
         <img class='logo' src="./public/images/logo.svg" alt="logo">        
         <nav>
             <ul>
-                <li><a href="#">Features</a></li>
-                <li><a href="#">Company</a></li>
-                <li><a href="#">Career</a></li>
+                <div>
+                    <li id="features"><a href="#">Features</a><img class="arrow" src="./public/images/icon-arrow-down.svg" alt=""></li>
+                    <section id="section1">
+                        <ul id="featuresDropdown">
+                            <li><img src="./public/images/icon-todo.svg" alt=""><a href="">Todo list</a></li>
+                            <li><img src="./public/images/icon-calendar.svg" alt=""><a href="">Calenders</a></li>
+                            <li><img src="./public/images/icon-reminders.svg" alt=""><a href="">Reminders</a></li>
+                            <li><img src="./public/images/icon-planning.svg" alt=""><a href="">Planning</a></li>
+                        </ul>
+                    </section>
+                </div>
+                <div>
+                    <li id="company"><a href="#">Company</a><img class="arrow" src="./public/images/icon-arrow-down.svg" alt=""></li>
+                    <section id="section2">
+                        <ul id="featuresDropdown2">
+                            <li><a href="">History</a></li>
+                            <li><a href="">Our Team</a></li>
+                            <li><a href="">Blog</a></li>
+                        </ul>
+                    </section>
+                </div>
+                <li class="career"><a href="#">Career</a></li>
                 <li><a href="#">About</a></li>
                 <li class="login"><a href="#">Login</a></li>
                 <li class="register"><a href="#">Register</a></li>
@@ -41,5 +60,6 @@
             <img src="./public/images/image-hero-desktop.png" alt="Hero image">
         </section>
     </main>
+    <script src="./public/js/main.js"></script>
 </body>
 </html>

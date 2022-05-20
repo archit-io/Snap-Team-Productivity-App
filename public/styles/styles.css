@@ -27,7 +27,7 @@ li {
     list-style: none;
 }
 
-li:nth-child(3) > a, p {
+.career > a, p {
     color: hsl(0, 0%, 41%);
 }
 
@@ -65,6 +65,66 @@ ul {
     border: 1px solid black;
     border-radius: 20px;
 }
+
+.arrow {
+    margin-left: 7px;
+}
+
+.arrow:hover {
+    cursor: pointer;
+}
+
+/* Dropdown */
+
+div {
+    position: relative;
+}
+
+#section1, #section2 {
+    display: none;
+    position: absolute;
+    left: 0;
+    z-index: 1;
+    border: 1px solid black;
+    border-radius: 15px;
+    margin-top: 20px;
+}
+
+#section1.active {
+    display: block;
+}
+
+#section2.active {
+    display: block;
+}
+
+div ul {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    border-radius: 15px;
+    width: 100%;
+    align-items: flex-end;
+}
+
+div ul img {
+    margin-right: 10px;
+}
+
+div ul li {    
+    margin-right: 50px;
+    margin: 10px;
+    width: 100%;
+    display: flex;
+}
+
+
+
+
+/*Cards*/
+
+
+
 
 /* Main */
 main {
