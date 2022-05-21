@@ -14,10 +14,11 @@
 <body>
     <header>        
         <img class='logo' src="./public/images/logo.svg" alt="logo">        
-        <nav>
+        <nav class="navbar">
             <ul>
                 <div>
                     <li id="features"><a href="#">Features</a><img class="arrow" src="./public/images/icon-arrow-down.svg" alt=""></li>
+                    <li id="featuresArrowUp"><a href="#">Features</a><img class="arrow" src="./public/images/icon-arrow-up.svg" alt=""></li>
                     <section id="section1">
                         <ul id="featuresDropdown">
                             <li><img src="./public/images/icon-todo.svg" alt=""><a href="">Todo list</a></li>
@@ -29,6 +30,7 @@
                 </div>
                 <div>
                     <li id="company"><a href="#">Company</a><img class="arrow" src="./public/images/icon-arrow-down.svg" alt=""></li>
+                    <li id="companyArrowUp"><a href="#">Company</a><img class="arrow" src="./public/images/icon-arrow-up.svg" alt=""></li>
                     <section id="section2">
                         <ul id="featuresDropdown2">
                             <li><a href="">History</a></li>
@@ -42,6 +44,42 @@
                 <li class="login"><a href="#">Login</a></li>
                 <li class="register"><a href="#">Register</a></li>
             </ul>
+        </nav>
+        <nav class="menu">
+            <img id="menuClosed" src="./public/images/icon-menu.svg" alt="">
+            <section id="openedMenu">
+                <img id="menuOpen" src="./public/images/icon-close-menu.svg" alt="">
+                <ul id='menuList'>
+                    <div>
+                        <li id="featuresMobile"><a href="">Features</a><img class="arrow" src="./public/images/icon-arrow-down.svg" alt=""></li>
+                        <li id="featuresMobileArrowUp"><a href="">Features</a><img class="arrow" src="./public/images/icon-arrow-up.svg" alt=""></li>
+                        <section id="section1Mobile">
+                            <ul id="featuresDropdownMobile">
+                                <li><img src="./public/images/icon-todo.svg" alt=""><a href="">Todo list</a></li>
+                                <li><img src="./public/images/icon-calendar.svg" alt=""><a href="">Calenders</a></li>
+                                <li><img src="./public/images/icon-reminders.svg" alt=""><a href="">Reminders</a></li>
+                                <li><img src="./public/images/icon-planning.svg" alt=""><a href="">Planning</a></li>
+                            </ul>
+                        </section>
+                    </div>
+                    <div>
+                        <li id="companyMobile"><a href="">Company</a><img class="arrow" src="./public/images/icon-arrow-down.svg" alt=""></li>
+                        <li id="companyMobileArrowUp"><a href="">Company</a><img class="arrow" src="./public/images/icon-arrow-up.svg" alt=""></li>
+                        <section id="section2Mobile">
+                            <ul id="featuresDropdown2Mobile">
+                                <li><a href="">History</a></li>
+                                <li><a href="">Our Team</a></li>
+                                <li><a href="">Blog</a></li>
+                            </ul>
+                        </section>
+                    </div>
+                    <li><a href="">Career</a></li>
+                    <li><a href="">About</a></li>
+                </ul>
+                <span class="mobileLogin">Login</span>
+                <span class="mobileRegister">Register</span>
+            </section>
+
         </nav>
     </header>
     <main>
@@ -57,7 +95,12 @@
             </ul>
         </section>
         <section class="heroImage">
-            <img src="./public/images/image-hero-desktop.png" alt="Hero image">
+            <!-- <img src="./public/images/image-hero-desktop.png" alt="Hero image"> -->
+            <picture>
+                <source srcset="./public/images/image-hero-desktop.png" media="(min-width: 800px)">
+                <source srcset="./public/images/image-hero-mobile.png" media="(max-width: 800px)">
+                <img srcset="./public/images/image-hero-desktop.png" alt="…">
+              </picture>
         </section>
     </main>
     <script src="./public/js/main.js"></script>
